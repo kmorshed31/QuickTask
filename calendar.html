@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Slide-Out Glass Menu -->
+    <div id="menuOverlay" class="hidden">
+        <button id="closeMenuButton">✕</button>
+        <div id="menuContent">
+            <h2>QuickTask</h2>
+            <a href="index.html" class="menuLink" data-page="index.html">Tasks</a>
+            <a href="calendar.html" class="menuLink" data-page="calendar.html">Calendar</a>
+            <a href="about.html" class="menuLink" data-page="about.html">About</a>
+
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <button id="menuButton">☰</button>
+        <img src="images/QuickTask Calendar.png" alt="QuickTask Calendar Logo" style="height: 60px;">
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div id="calendarContainer">
+            <div id="calendarHeader">
+                <button id="prevMonthBtn">&lt;</button>
+                <span id="monthYear"></span>
+                <button id="nextMonthBtn">&gt;</button>
+            </div>
+            <div id="calendarGrid"></div>
+        </div>
+
+        <div id="taskDisplay">
+            <h2>Tasks for Selected Date</h2>
+            <div id="taskList"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

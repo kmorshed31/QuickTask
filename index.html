@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Slide-Out Glass Menu -->
+    <div id="menuOverlay" class="hidden">
+        <button id="closeMenuButton">✕</button>
+        <div id="menuContent">
+            <h2>QuickTask</h2>
+            <a href="index.html" class="menuLink" data-page="index.html">Tasks</a>
+            <a href="calendar.html" class="menuLink" data-page="calendar.html">Calendar</a>
+            <a href="about.html" class="menuLink" data-page="about.html">About</a>
+
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <button id="menuButton">☰</button>
+        <img src="images/QuickTask.png" alt="QuickTask Logo" style="height: 60px;">
+        <p id="clock"></p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <button id="addTaskBtn">+ Add Task</button>
+
+        <div id="inputArea" style="display: none;">
+            <input type="text" id="taskNameInput" placeholder="Enter Task Name">
+            <input type="datetime-local" id="dueDateInput">
+            <input type="text" id="locationInput" placeholder="Enter Location">
+            <select id="locationTypeInput">
+                <option value="Home">Home</option>
+                <option value="Work">Work</option>
+                <option value="School">School</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="saveTaskBtn">Save Task</button>
+            <button id="cancelTaskButton" type="button">Cancel</button>
+        </div>
+
+        <section id="taskList"></section>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
